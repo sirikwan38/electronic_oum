@@ -10,13 +10,33 @@
     tools:context="ice_pbru.khamhor.sirikwan.electronic_oum.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="อุปกรณ์อิเล็คทรอนิกส์"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:background="#f1aacd" />
 
     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="About me"
+        android:id="@+id/button"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:textSize="50dp"
+        android:background="#f1aacd" />
+
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button" />
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="false" />
+
 </RelativeLayout>
